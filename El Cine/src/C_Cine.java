@@ -1,4 +1,4 @@
-public class C_Cine {
+public class C_Cine implements I_Informaciones {
     // ATRIBUTOS:
     private String nombreCine;
     private C_SalaCine[] salasCine;
@@ -32,4 +32,13 @@ public class C_Cine {
         this.empleados = empleados;
     }
 
+    @Override
+    public String getName() {
+        return "C_Cine";
+    }
+
+    @Override
+    public String toString() {
+        return "Nombre del Cine: " + this.getNombreCine() + " Salas: " + this.getSalasCine().length + " Empleados: " + this.getEmpleados().length;
+    }
 }

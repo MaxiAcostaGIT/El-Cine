@@ -1,4 +1,4 @@
-public class C_SalaCine {
+public class C_SalaCine implements I_Informaciones{
     // ATRIBUTOS:
     private String nombreSala;
     private int capacidad;
@@ -38,5 +38,15 @@ public class C_SalaCine {
     }
     public void setEspectadores(C_Espectador[][] espectadores) {
         this.espectadores = espectadores;
+    }
+
+    @Override
+    public String getName() {
+        return "C_SalaCine";
+    }
+
+    @Override
+    public String toString() {
+        return "Nombre: " + this.getNombreSala() + " Capacidad: " + this.getCapacidad() + " Pelicula: " + this.getPelicula();
     }
 }
