@@ -3,14 +3,12 @@ public class C_Cine {
     private String nombreCine;
     private C_SalaCine[] salasCine;
     private C_Empleados[] empleados;
-    private C_Espectador[] espectadores;
 
     // CONSTRUCTORES:
-    public C_Cine(String nombreCine, int numSalas, int numEmpleados, int numEspectadores) {
+    public C_Cine(String nombreCine, int numSalas, int numEmpleados) {
         this.setNombreCine(nombreCine);
         this.setSalasCine(new C_SalaCine[numSalas]);
         this.setEmpleados(new C_Empleados[numEmpleados]);
-        this.setEspectadores(new C_Espectador[numEspectadores]);
     }
 
     // METODOS:
@@ -32,12 +30,6 @@ public class C_Cine {
     }
     public void setEmpleados(C_Empleados[] empleados) {
         this.empleados = empleados;
-    }
-    public C_Espectador[] getEspectadores() {
-        return espectadores;
-    }
-    public void setEspectadores(C_Espectador[] espectadores) {
-        this.espectadores = espectadores;
     }
 
 }

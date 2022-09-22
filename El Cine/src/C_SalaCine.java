@@ -3,15 +3,14 @@ public class C_SalaCine {
     private String nombreSala;
     private int capacidad;
     private String pelicula;
-    // atributo asientos de 2 dimensiones, la primera dimension con la letra de la fila y la segunda con el numero de asiento:
-    private String[][] asientos;
-
+    private C_Espectador[][] espectadores;
 
     // CONSTRUCTORES:
     public C_SalaCine(String nombreSala, int capacidad, String pelicula) {
         this.setNombreSala(nombreSala);
         this.setCapacidad(capacidad);
         this.setPelicula(pelicula);
+        espectadores = new C_Espectador[capacidad][capacidad];
     }
 
     // METODOS:
@@ -33,5 +32,11 @@ public class C_SalaCine {
     public void setPelicula(String pelicula) {
         this.pelicula = pelicula;
     }
-
+    ////////////////////////////////////////
+    public C_Espectador[][] getEspectadores() {
+        return espectadores;
+    }
+    public void setEspectadores(C_Espectador[][] espectadores) {
+        this.espectadores = espectadores;
+    }
 }

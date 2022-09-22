@@ -5,32 +5,52 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         // CINE:
-        C_Cine cine = new C_Cine("Cinepolis", 2, 2, 4);
+        C_Cine cine = new C_Cine("Cinepolis", 2, 2);
 
         // SALAS:
-        cine.getSalasCine()[0] = new C_SalaCine("Sala 1", 2, "Avengers");
-        cine.getSalasCine()[1] = new C_SalaCine("Sala 2", 1, "One Piece");
+        cine.getSalasCine()[0] = new C_SalaCine("Sala 1", 5, "Avengers");
+        cine.getSalasCine()[1] = new C_SalaCine("Sala 2", 5, "One Piece");
+
+        // ESPECTADORES:
+        C_Espectador espectador1 = new C_Espectador("Juan", 12345678);
+
+        System.out.println(cine.getSalasCine()[0].getCapacidad());
 
         //PROGRAMA:
         System.out.println("- Bienvenido a " + cine.getNombreCine() + " -");
         System.out.println();
 
-        System.out.println("¿Que sala desea modificar?");
+        System.out.println("¿Que desea modificar?");
         System.out.println("1. " + cine.getSalasCine()[0].getNombreSala());
         System.out.println("2. " + cine.getSalasCine()[1].getNombreSala());
-        System.out.println("3. Salir");
+        System.out.println("3. Cambiar sueldo de empleado");
+        System.out.println("4. Salir");
         int opcion = sc.nextInt();
 
         switch (opcion) {
             case 1:
                 System.out.println("¿Que desea modificar?");
-                System.out.println("1. Agregar espectador");
+                System.out.println("1. Agregar espectadores");
                 System.out.println("2. Cambiar pelicula");
                 System.out.println("3. Salir");
                 int opcion2 = sc.nextInt();
                     switch (opcion2) {
                         case 1:
-
+                            //Agregar espectadores con nombre y fila y asiento:
+                            char flag = 's';
+                            do {
+                                System.out.println("Ingrese nombre del espectador:");
+                                String nombre = sc.next();
+                                System.out.println("Ingrese DNI:");
+                                int dni = sc.nextInt();
+                                System.out.println("Ingrese fila:");
+                                int fila = sc.nextInt();
+                                System.out.println("Ingrese asiento:");
+                                int asiento = sc.nextInt();
+                                cine.getSalasCine()[0].getEspectadores()[fila][asiento] = new C_Espectador(nombre, dni);
+                                System.out.println("¿Desea agregar otro espectador? (s/n)");
+                                flag = sc.next().charAt(0);
+                            } while (flag == 's');
                             break;
 
                         case 2:
@@ -49,7 +69,19 @@ public class Main {
                 break;
             case 2:
 
+                break;
             case 3:
+                System.out.println("Seleccione un Empleado:");
+                for (int i = 0; i < cine.getEmpleados().length; i++) {
+                    System.out.println(i + ". " + cine.getEmpleados()[i].toString());
+                }
+                int opcionEmpleado = sc.nextInt();
+                System.out.println("Ingrese nuevo sueldo:");
+                int nuevoSueldo = sc.nextInt();
+                cine.getEmpleados()[opcionEmpleado].setSueldo(nuevoSueldo);
+                System.out.println("Gracias por usar el programa.");
+                break;
+            case 4:
                 System.out.println("Gracias por usar el programa.");
                 break;
 
