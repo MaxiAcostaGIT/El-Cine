@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f4b07036-fb44-40a5-b800-1cdaa06efef0" name="Changes" comment="Prueba de COMMIT">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/A_Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/C_Empleados.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/C_Espectador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/C_SalaCine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/I_Informaciones.java" afterDir="false" />
+    <list default="true" id="f4b07036-fb44-40a5-b800-1cdaa06efef0" name="Changes" comment="subo Clases Persona y derivados - SalaCine. Interfaz Informaciones">
+      <change afterPath="$PROJECT_DIR$/src/C_Cine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/C_SalaCine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/C_SalaCine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -42,8 +38,7 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -62,7 +57,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663857785763</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="subo Clases Persona y derivados - SalaCine. Interfaz Informaciones">
+      <created>1663858685412</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663858685412</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -78,6 +80,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Prueba de COMMIT" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prueba de COMMIT" />
+    <MESSAGE value="subo Clases Persona y derivados - SalaCine. Interfaz Informaciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="subo Clases Persona y derivados - SalaCine. Interfaz Informaciones" />
   </component>
 </project>
